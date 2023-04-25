@@ -1,4 +1,4 @@
 # dynamic-quiz
-Fundamental Front End Web Tech - Final Project
+Front End Web Development - Final Project
 
 Featuring: Corey, Jenny, and Jordan
