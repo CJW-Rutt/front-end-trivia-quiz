@@ -1,0 +1,8 @@
+.quiz__container {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 700px;
+    background-color: #B9DDDFB5;
+
+}

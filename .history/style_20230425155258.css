@@ -22,13 +22,7 @@ body {
 
 }
 
-.quiz__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    color: #0B4F6C;
-}
+.quiz__title {}
 
 .quiz__submit-button {
     color: white;
