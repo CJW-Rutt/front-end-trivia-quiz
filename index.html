@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./modules/main.js" async></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-
-<body>
-    <div class="quiz__container">
-        <div class="quiz__title">
-
+  <body>
+    <div class="container">
+      <h1>Trivia Challenge</h1>
+      <form id="form">
+        <div>
+          <label for="category">Select Category:</label>
+          <select id="category" required>
+            <option value="" disabled selected>Choose a category</option>
+          </select>
         </div>
-        <div class="quiz__select-row">
-            <select></select>
+        <div>
+          <label for="difficulty">Choose Difficulty:</label>
+          <select id="difficulty" required>
+            <option value="easy" selected>Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
         </div>
-        <div class="quiz__submit-button">
-
+        <div>
+          <button type="submit">Begin Quiz</button>
         </div>
+      </form>
+      <div id="quiz" class="hidden">
+        <p id="timer">Time Left: 5:00</p>
+        <div id="question-container"></div>
+      </div>
+      <div id="results" class="hidden">
+        <h2>Quiz Results</h2>
+        <p id="final-score"></p>
+        <ul id="wrong-answers"></ul>
+        <button id="play-again">Try Again</button>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
