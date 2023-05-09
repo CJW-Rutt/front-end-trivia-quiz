@@ -6,7 +6,7 @@ import {
   resultUI,
   scoreUI,
   incorrectAnswers,
-  replay,  
+  replay,
   firstNameInput,
   lastNameInput,
 } from "./dom.js";
@@ -111,20 +111,21 @@ function finishQuiz() {
     score: rightAnswers,
     name: `${firstName} ${lastName}`,
   };
-  
+
   sendQuizResults(quizData)
     .then((response) => {
       console.log("Quiz results sent successfully:", response);
     })
     .catch((error) => {
       console.error("Failed to send quiz results:", error);
-  });
-    
+    });
+
   quizUI.classList.add("hidden");
   resultUI.classList.remove("hidden");
 }
 
 replay.addEventListener("click", () => {
+  completedQuestions = []
   resultUI.classList.add("hidden");
   formSetup.classList.remove("hidden");
 });
