@@ -1,11 +1,11 @@
-import fetchCategoriesAPI from "./api.js";
+import fetchCategoriesAPI, { fetchQuizQuestions } from "./api.js";
 import {
   formSetup,
   categoryDropdown,
   difficultyDropdown,
   quizUI,
 } from "./dom.js";
-//import { initQuiz } from "./quiz.js";
+import { initQuiz } from "./quiz.js";
 
 (async () => {
   const categoryList = await fetchCategoriesAPI();

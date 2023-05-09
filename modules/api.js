@@ -26,4 +26,22 @@ async function getQuizData(numberOfQuestions, selectedCategoryId, chosenDifficul
   });
 }
 
+async function sendQuizResults(data) {
+  const response = await fetch("https://apipool.azurewebsites.net/api/quizzes", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to send quiz results");
+  }
+
+  return await response.json();
+}
+
+export { sendQuizResults };
+
 export { getQuizData as fetchQuizQuestions };
