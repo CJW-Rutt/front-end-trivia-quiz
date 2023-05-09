@@ -276,17 +276,5 @@ button {
 }
 
 label {
-    font-family: 'Montserrat';
-    color: #0B4F6C;
-    font-weight: 500;
-    padding: 5px;
-}
-
-.name-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
+    font
 }

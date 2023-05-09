@@ -265,6 +265,7 @@ button {
     padding: 10px;
     border-radius: 15px;
     margin: 5px;
+    width: 45px;
 }
 
 #last-name {

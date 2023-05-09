@@ -285,8 +285,4 @@ label {
 .name-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
 }
