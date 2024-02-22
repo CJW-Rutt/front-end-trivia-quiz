@@ -14,6 +14,17 @@ async function getQuizData(numberOfQuestions, selectedCategoryId, chosenDifficul
   );
   const jsonData = await apiResponse.json();
 
+
+  if (jsonData.response_code === 5) {
+    alert("Too many attempts to reach the API within 5 seconds. Please wait before trying again.");
+    return [];
+  }
+
+  if (!jsonData.results) {
+    alert("Unexpected response from the API.");
+    return [];
+  }
+
   return jsonData.results.map((singleQuestion) => {
     const randomCorrectIndex = Math.floor(Math.random() * 4);
     const optionList = [...singleQuestion.incorrect_answers];

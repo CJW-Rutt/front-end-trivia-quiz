@@ -1,3 +1,5 @@
+/* Corey: I wanted it to be more responsive for codesandbox embedding, so I updated your CSS Jenny <3 */
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,7 +13,7 @@ body {
 
 .container {
     width: 70%;
-    height: 600px;
+    height: 700px;
     margin: 0 auto;
     background: rgba(185, 221, 223, 0.71);
     /* drop */
@@ -59,8 +61,6 @@ ol {
     font-weight: 500;
     font-size: 15px;
     color: #0B4F6C;
-
-
 }
 
 #category {
@@ -73,6 +73,16 @@ ol {
     font-size: 15px;
     color: white;
     border: none;
+}
+
+#final-score {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+
 }
 
 #difficulty {
@@ -108,22 +118,16 @@ ol {
 
 
 #results {
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     color: #0B4F6C;
-    overflow: scroll;
     padding: 20px;
     margin: 10px;
 }
 
-ul {
-    padding: 10px;
 
-
-}
 
 
 
@@ -145,6 +149,44 @@ ul {
     font-weight: 500;
     font-size: 15px;
     color: white;
+}
+
+li {
+    margin: 6px;
+
+}
+
+#wrong-answers {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 20px;
+    list-style-type: none;
+    background-color: #E5F1F2;
+    border-radius: 15px;
+    border: #779FA1 solid 2px;
+    font-size: 20px;
+}
+
+#play-again {
+    padding: 20px;
+    width: 200px;
+    margin-top: 20px;
+    background: #0B4F6C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+#play-again:hover {
+    background: #81afc3;
+
 }
 
 .difficulty {
@@ -200,9 +242,49 @@ button {
 
 .choice-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    background-color: ;
+    padding: 20px;
+    margin: 10px;
+    background: #E5F1F2;
+    box-shadow: 0px 3px 9px 4px #78ADB0;
+    border-radius: 10px;
+}
+
+.choice-row:hover {
+    background: #0B4F6C;
+    color: #E5F1F2;
+}
+
+#first-name {
+    background: #E5F1F2;
+    border: #779FA1 solid 2px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#last-name {
+    background: #E5F1F2;
+    border: #779FA1 solid 2px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+label {
+    font-family: 'Montserrat';
+    color: #0B4F6C;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
 }
